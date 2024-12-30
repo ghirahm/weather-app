@@ -80,7 +80,7 @@ const Weather = (props) => {
               </p>
               </div>
               <div>
-                <h1 className="text-left text-[#F0C548] text-2xl md:text-5xl">{(weather.main.temp).toFixed(0)/10}&deg;C</h1>
+                <h1 className="text-left text-[#F0C548] text-2xl md:text-5xl">{(weather.main.temp).toFixed(1)}&deg;C</h1>
                 <p className="text-left text-white capitalize text-xs mt-2">{weather.weather[0].description}</p>
               </div>
             </div>
