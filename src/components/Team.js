@@ -46,9 +46,7 @@ const Team = () => {
           <p className="text-xs md:text-sm text-[#323368] text-justify md:text-left mt-8 leading-7 md:leading-9">
             A computer science education student that is a knowledge-curious,
             communicative, diligent, hard-worker, responsible, and quick learner
-            person, have passionate and experienced about web developing.
-            Familiar with front end developing, graphic design, motion graphic,
-            and UI/UX.
+            person, have passionate and experienced about graphic design and motion graphic.
           </p>
           <div className="w-full grid justify-items-center md:justify-items-start">
             <button className="text-base text-white bg-[#F0C548] rounded-lg w-[160px] p-3 transition-all hover:bg-[#323368] mt-8 hover:text-white">

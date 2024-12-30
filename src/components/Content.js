@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Content = () => {
   return (
-    <div className="lg:container w-full h-[640px] mt-48 lg:mt-12 flex justify-center items-center">
+    <div className="lg:container w-full h-fit mt-48 lg:mt-12 flex justify-center items-center">
         <div className="grid lg:grid-cols-2 justify-items-center w-10/12 lg:w-9/12 gap-10">
             <div className='order-1 px-6 mb-6 lg:mb-0'>
                 <h1 className="text-4xl font-black text-[#323368] text-center lg:text-left">Real-Time Weather</h1>

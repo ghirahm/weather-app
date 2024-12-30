@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const VideoContent = () => {
   return (
-    <div className="lg:container w-full h-[560px] lg:h-[640px] my-36 flex justify-center items-center">
+    <div className="lg:container w-full h-[560px] lg:h-[640px] my-12 flex justify-center items-center">
         <div className="grid lg:grid-cols-2 justify-items-center w-10/12 lg:w-9/12 gap-10">
             <div className='order-1 px-6 mb-6 lg:mb-0'>
                 <h1 className="text-3xl md:text-4xl font-black text-[#323368] text-center lg:text-left">Be Aware of<br/> Climate Change</h1>
