@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
