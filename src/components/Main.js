@@ -1,14 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Weather from "./Weather";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-const Main = () => {
+const Main = (props) => {
   const [city, setCity] = useState("Jakarta");
   const [errorMessage, setErrorMessage] = useState(null);
   const [errorLocation, setErrorLocation] = useState(null);
   const [isLoadingCurrentLocation, setIsLoadingCurrentLocation] = useState(false)
 
   const [weather, setWeather] = useState();
+
+  const weatherRef = useRef(null);
+
+  const handleScroll = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop, behavior: 'smooth'
+    })
+  }
 
   useEffect(() => {
     onSearch();
@@ -27,7 +36,10 @@ const Main = () => {
       .catch((error) => {
         setErrorMessage(error.message);
         setErrorLocation(null);
-      });
+      })
+      .finally(() => {
+        handleScroll(weatherRef)
+      })
   };
 
   const onLocation = async (event) => {
@@ -53,6 +65,7 @@ const Main = () => {
           })
           .finally(()=>{
             setIsLoadingCurrentLocation(false);
+            handleScroll(weatherRef)
           })
         }
       )
@@ -185,7 +198,8 @@ const Main = () => {
           </button>
         </div>
       </div>
-      {weather && <Weather weather={weather} />}
+      {weather && 
+      <div ref={weatherRef}><Weather weather={weather} /></div>}
     </div>
   );
 };
