@@ -7,7 +7,6 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import MainPage from "./pages/MainPage";
 import AboutPage from "./pages/AboutPage";
-import TeamPage from "./pages/TeamPage";
 
 function App() {
   const { pathname } = useLocation();
@@ -22,7 +21,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/team" element={<TeamPage />} />
       </Routes>
       <Footer />
     </div>
