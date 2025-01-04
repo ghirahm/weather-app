@@ -7,7 +7,7 @@ import Logo from "../resources/logo.png";
 const Navigation = () => {
 
     const scrollOffset = (el) => {
-        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yCoordinate = el.getBoundingClientRect().top + window.pageY;
         const yOffset = -100;
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     }
